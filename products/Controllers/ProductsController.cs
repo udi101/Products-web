@@ -1,15 +1,20 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
 using Common.Models;
+using BL.Main;
 
 namespace products.Controllers
 {
+    [RoutePrefix("Products")]
     public class ProductsController : ApiController
     {
-        // GET: api/Products
-        public IEnumerable<string> Get()
+        // GET: api/ProductsB
+        [Route("")]
+        [HttpGet]
+        public IEnumerable<string> GetProducts()
         {
-            return new string[] { "value1", "value2" };
+            var bl = new ProductsBL();
+            return bl.GetProducts();
         }
 
         // GET: api/Products/5
