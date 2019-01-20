@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using Common.Entities;
-using BL.Main;
+using Products.Common.Entities;
+using Products.BL.Main;
 using System.Threading.Tasks;
 
 namespace products.Controllers

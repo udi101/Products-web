@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DAL.Repository;
-using Common.Entities;
+using Products.DAL.Repository;
+using Products.Common.Entities;
 
-namespace BL.Main
+namespace Products.BL.Main
 {
     public class ProductsBL
     {

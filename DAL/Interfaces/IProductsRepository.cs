@@ -1,11 +1,11 @@
-﻿using Common.Entities;
+﻿using Products.Common.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL.Interfaces
+namespace Products.DAL.Interfaces
 {
     interface IProductsRepository
     {

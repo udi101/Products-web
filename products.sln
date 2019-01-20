@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27004.2009
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "products", "products\products.csproj", "{3D6C5655-C95D-44B5-B655-76305B2B279D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products", "products\Products.csproj", "{3D6C5655-C95D-44B5-B655-76305B2B279D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{AF4551E6-A5AD-4DA6-A47C-A536244B494E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.Common", "Common\Products.Common.csproj", "{AF4551E6-A5AD-4DA6-A47C-A536244B494E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B110FA42-51D3-45D4-B8EE-80D6D1B04134}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.DAL", "DAL\Products.DAL.csproj", "{B110FA42-51D3-45D4-B8EE-80D6D1B04134}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BL", "BL\BL.csproj", "{0AD61993-FF6D-44A4-9D3A-0EC6648D223F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Products.BL", "BL\Products.BL.csproj", "{0AD61993-FF6D-44A4-9D3A-0EC6648D223F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

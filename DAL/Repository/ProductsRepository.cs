@@ -1,12 +1,13 @@
-﻿using DAL.Interfaces;
+﻿using Products.DAL.Interfaces;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using Dapper;
 using System.Configuration;
-using Common.Entities;
+using Products.Common.Entities;
 using System.Threading.Tasks;
+using Products.DAL.Infrastructure;
 
-namespace DAL.Repository
+namespace Products.DAL.Repository
 {
     public class ProductsRepository : IProductsRepository
     {
@@ -14,8 +15,9 @@ namespace DAL.Repository
         {
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString))
             {
+                //return await DbExecuter.Query<Product>("select * from dbo.products");
                 conn.Open();
-                return  await conn.QueryAsync<Product>("select * from dbo.products");
+                return await conn.QueryAsync<Product>("select * from dbo.products");
             }
         }
     }

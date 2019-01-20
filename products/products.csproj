@@ -262,13 +262,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BL\BL.csproj">
+    <ProjectReference Include="..\BL\Products.BL.csproj">
       <Project>{0AD61993-FF6D-44A4-9D3A-0EC6648D223F}</Project>
-      <Name>BL</Name>
+      <Name>Products.BL</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Common\Common.csproj">
+    <ProjectReference Include="..\Common\Products.Common.csproj">
       <Project>{af4551e6-a5ad-4da6-a47c-a536244b494e}</Project>
-      <Name>Common</Name>
+      <Name>Products.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
