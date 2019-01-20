@@ -50,6 +50,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{AF4551E6-A5AD-4DA6-A47C-A536244B494E}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{b110fa42-51d3-45d4-b8ee-80d6d1b04134}</Project>
       <Name>DAL</Name>

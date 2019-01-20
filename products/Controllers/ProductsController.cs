@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using Common.Models;
+using Common.Entities;
 using BL.Main;
+using System.Threading.Tasks;
 
 namespace products.Controllers
 {
@@ -11,10 +12,10 @@ namespace products.Controllers
         // GET: api/ProductsB
         [Route("")]
         [HttpGet]
-        public IEnumerable<string> GetProducts()
+        public async Task<IEnumerable<Product>> GetProducts()
         {
             var bl = new ProductsBL();
-            return bl.GetProducts();
+            return await bl.GetProducts();
         }
 
         // GET: api/Products/5

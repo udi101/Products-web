@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Common.Models
+namespace Common.Entities
 {
     public class Product
     {
         public int ProductId { get; set; }
+        public string ProductName { get; set; }
     }
 }
