@@ -15,9 +15,7 @@ namespace Products.DAL.Repository
         {
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString))
             {
-                //return await DbExecuter.Query<Product>("select * from dbo.products");
-                conn.Open();
-                return await conn.QueryAsync<Product>("select * from dbo.products");
+                return await DbExecuter.Query<Product>("select * from dbo.product");
             }
         }
     }

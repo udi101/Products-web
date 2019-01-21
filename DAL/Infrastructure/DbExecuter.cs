@@ -13,7 +13,7 @@ namespace Products.DAL.Infrastructure
             using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ProductsConnectionString"].ConnectionString))
             {
                 conn.Open();
-                return await conn.QueryAsync<T>("sqlQuery");
+                return await conn.QueryAsync<T>(sqlQuery);
             }
         }
     }
