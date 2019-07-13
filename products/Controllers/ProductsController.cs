@@ -3,6 +3,7 @@ using System.Web.Http;
 using Products.Common.Entities;
 using Products.BL.Main;
 using System.Threading.Tasks;
+using System.Net.Http;
 
 namespace products.Controllers
 {
@@ -12,10 +13,10 @@ namespace products.Controllers
         // GET: api/ProductsB
         [Route("")]
         [HttpGet]
-        public async Task<IEnumerable<Product>> GetProducts()
+        public async Task<HttpResponseMessage> GetProducts()
         {
             var bl = new ProductsBL();
-            return await bl.GetProducts();
+            return Request.CreateResponse(System.Net.HttpStatusCode.Created, await bl.GetProducts());
         }
 
         // GET: api/Products/5
